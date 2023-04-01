@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* background-color: black; */
+    background-image: radial-gradient(circle at center center, transparent 0%, rgb(0, 0, 0) 85%), linear-gradient(78deg, rgba(192, 192, 192, 0.05) 0%, rgba(192, 192, 192, 0.05) 50%, rgba(60, 60, 60, 0.05) 50%, rgba(60, 60, 60, 0.05) 100%), linear-gradient(227deg, rgba(97, 97, 97, 0.05) 0%, rgba(97, 97, 97, 0.05) 50%, rgba(52, 52, 52, 0.05) 50%, rgba(52, 52, 52, 0.05) 100%), linear-gradient(240deg, rgba(98, 98, 98, 0.05) 0%, rgba(98, 98, 98, 0.05) 50%, rgba(249, 249, 249, 0.05) 50%, rgba(249, 249, 249, 0.05) 100%), linear-gradient(187deg, rgba(1, 1, 1, 0.05) 0%, rgba(1, 1, 1, 0.05) 50%, rgba(202, 202, 202, 0.05) 50%, rgba(202, 202, 202, 0.05) 100%), linear-gradient(101deg, rgba(61, 61, 61, 0.05) 0%, rgba(61, 61, 61, 0.05) 50%, rgba(254, 254, 254, 0.05) 50%, rgba(254, 254, 254, 0.05) 100%), linear-gradient(176deg, rgba(237, 237, 237, 0.05) 0%, rgba(237, 237, 237, 0.05) 50%, rgba(147, 147, 147, 0.05) 50%, rgba(147, 147, 147, 0.05) 100%), linear-gradient(304deg, rgba(183, 183, 183, 0.05) 0%, rgba(183, 183, 183, 0.05) 50%, rgba(57, 57, 57, 0.05) 50%, rgba(57, 57, 57, 0.05) 100%), radial-gradient(circle at center center, hsl(351, 4%, 12%), hsl(351, 4%, 12%));
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Loto', sans-serif;
+}
+.logo{
+    width: 400px;
+    height: 400px;
+    margin-top: -100px;
+}
+h2{
+    text-align: center;
+    margin-top: -100px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    line-height: 1.8;
+    width: 650px;
+}
+span{
+    font-weight: bold;
+}
+
+button.btn{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 14px 32px;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: 'Loto', sans-serif;
+    box-shadow: 0 2px 7px white;
+    transition: all 0.2s ease-in-out;
+}
+button.btn:hover{
+    transform: scale(1.02);
+}
+button.btn:active{
+    transform: scale(0.95);
+}
+.chess{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.7;
+    width: 700px;
+    height: 700px;
+    z-index: -1;
+}
+.link{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+    background-color: black;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 7px white;
+}
+.link img{
+    width: 40px;
+}
